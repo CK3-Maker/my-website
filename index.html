@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sam Chen — Personal Brand</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="logo">SC</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-tag">Welcome</p>
+      <h1 class="hero-title">Building Ideas.<br>Delivering Results.</h1>
+      <p class="hero-sub">Strategic consulting &amp; creative solutions for forward-thinking brands.</p>
+      <a href="#contact" class="btn btn-primary">Get in Touch</a>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-label">About Me</div>
+      <div class="about-grid">
+        <div class="about-text">
+          <h2>I help businesses grow through strategy, design, and innovation.</h2>
+          <p>With over a decade of experience in brand strategy and digital transformation, I partner with ambitious companies to unlock their full potential. My approach combines data-driven insights with creative thinking to deliver measurable outcomes.</p>
+          <p>I believe in the power of clear communication, purposeful design, and long-term partnerships. Every project I take on is treated as my own — because your success is my success.</p>
+        </div>
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-number">10+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">50+</span>
+            <span class="stat-label">Projects Completed</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">30+</span>
+            <span class="stat-label">Happy Clients</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="section services" id="services">
+    <div class="container">
+      <div class="section-label">What I Do</div>
+      <h2 class="section-title">Services</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-number">01</div>
+          <h3>Brand Strategy</h3>
+          <p>Defining your brand's positioning, voice, and visual identity to stand out in a crowded market.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-number">02</div>
+          <h3>Digital Marketing</h3>
+          <p>Data-driven campaigns across search, social, and content channels to grow your audience and revenue.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-number">03</div>
+          <h3>Web Design &amp; Development</h3>
+          <p>Beautiful, high-performance websites that convert visitors into customers and reflect your brand.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-number">04</div>
+          <h3>Business Consulting</h3>
+          <p>Strategic guidance to optimize operations, enter new markets, and scale your business sustainably.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="section-label">Get in Touch</div>
+          <h2>Let's work together.</h2>
+          <p>Have a project in mind or want to explore how I can help? Reach out — I'd love to hear from you.</p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <span class="contact-icon">&#9993;</span>
+              <div>
+                <strong>Email</strong>
+                <a href="mailto:hello@samchen.com">hello@samchen.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">&#9742;</span>
+              <div>
+                <strong>Phone</strong>
+                <a href="tel:+1234567890">+1 (234) 567-890</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">&#9872;</span>
+              <div>
+                <strong>Location</strong>
+                <span>New York, NY</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" onsubmit="handleSubmit(event)">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <a href="#" class="logo">SC</a>
+        <p>&copy; 2026 Sam Chen. All rights reserved.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Sticky nav on scroll
+    window.addEventListener('scroll', () => {
+      document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    // Mobile menu toggle
+    document.getElementById('navToggle').addEventListener('click', () => {
+      document.querySelector('.nav-links').classList.toggle('open');
+      document.getElementById('navToggle').classList.toggle('active');
+    });
+
+    // Close mobile menu on link click
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.querySelector('.nav-links').classList.remove('open');
+        document.getElementById('navToggle').classList.remove('active');
+      });
+    });
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', e => {
+        e.preventDefault();
+        const target = document.querySelector(anchor.getAttribute('href'));
+        if (target) target.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+
+    // Simple form handler
+    function handleSubmit(e) {
+      e.preventDefault();
+      const btn = e.target.querySelector('button');
+      btn.textContent = 'Message Sent!';
+      btn.disabled = true;
+      setTimeout(() => {
+        btn.textContent = 'Send Message';
+        btn.disabled = false;
+        e.target.reset();
+      }, 3000);
+    }
+
+    // Scroll reveal animation
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.service-card, .about-text, .about-stats, .contact-info, .contact-form').forEach(el => {
+      el.classList.add('reveal');
+      observer.observe(el);
+    });
+  </script>
+
+</body>
+</html>
