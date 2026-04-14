@@ -3,19 +3,6 @@ window.addEventListener('scroll', () => {
   document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 50);
 });
 
-// Mobile menu
-document.getElementById('navToggle').addEventListener('click', () => {
-  document.querySelector('.nav-links').classList.toggle('open');
-  document.getElementById('navToggle').classList.toggle('active');
-});
-
-document.querySelectorAll('.nav-links a').forEach(link => {
-  link.addEventListener('click', () => {
-    document.querySelector('.nav-links').classList.remove('open');
-    document.getElementById('navToggle').classList.remove('active');
-  });
-});
-
 // Smooth scroll for same-page anchors
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', e => {
