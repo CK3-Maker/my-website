@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Placeholder logo for SQA Builders.
+  Replace this file with your actual company logo (logo.svg or logo.png — see UPDATE_NOTES.md).
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <circle cx="60" cy="60" r="54" fill="none" stroke="#337ab7" stroke-width="4"/>
+  <text x="60" y="72" text-anchor="middle"
+        font-family="Inter, Arial, sans-serif" font-weight="800"
+        font-size="34" fill="#337ab7" letter-spacing="1">SQA</text>
+</svg>

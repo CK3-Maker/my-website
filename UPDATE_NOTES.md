@@ -21,6 +21,7 @@ The site is built with plain HTML/CSS/JavaScript. No build tools, no framework �
 | Culture / events gallery imagery | `careers.html` → `.culture-tile` blocks |
 | IBS content + Case studies (Design & Build) | `capabilities.html` |
 | Colour palette / fonts | `style.css` (top of file — `:root` variables) |
+| **Company logo** | Replace `logo.svg` (or use a PNG — see §13 below) |
 
 ---
 
@@ -224,7 +225,34 @@ git push
 
 ---
 
-## 12. Future modules (optional)
+## 13. Replacing the company logo
+
+The nav and footer on every page already have a logo slot — they currently load `logo.svg` (a blue-circle placeholder with "SQA" text).
+
+### Option A — Replace with your own SVG
+1. Save your real company logo as `logo.svg` in the project folder (overwriting the placeholder).
+2. Refresh the browser — every page picks up the new logo automatically.
+
+SVG is preferred because it scales crisply at any size, and the footer version is tinted white via a CSS filter. If your SVG uses solid colours, the white-tint will work correctly.
+
+### Option B — Use a PNG instead
+1. Save your logo as `logo.png` in the project folder (a transparent-background PNG at roughly 200×200px works best).
+2. In every HTML page, find `src="logo.svg"` and change it to `src="logo.png"`. There are two occurrences per page — one in the top nav and one in the footer.
+3. If your PNG isn't monochrome, the footer will display it in its original colours instead of tinted white — that's usually fine for colour logos. You can remove the white-tint by editing `style.css` and deleting the `.footer-brand .brand-logo { filter: ... }` block.
+
+### Resizing the logo
+In `style.css`, find `.brand-logo { width: 44px; height: 44px; ... }` near the top. Increase or decrease the size to taste — the surrounding layout adapts automatically.
+
+### Hiding the "SQA Builders" text next to the logo
+If your logo already contains the company name and you don't want the text duplicated, open `style.css` and add:
+
+```css
+.brand-text { display: none; }
+```
+
+---
+
+## 14. Future modules (optional)
 
 - **News / Media**
 - **Governance / Policies**
