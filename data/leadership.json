@@ -1,6 +1,7 @@
 {
-  "_note": "Update names, roles, and biographies here. Each entry renders a leader card on the Management page.",
-  "leaders": [
+  "_note": "Two lists: 'board' for Board of Directors and 'keyManagement' for Key Management. Key Management is OPTIONAL — currently hidden on the site. To reveal it, set 'showKeyManagement' to true and populate the keyManagement array.",
+  "showKeyManagement": false,
+  "board": [
     {
       "name": "[Executive Chairman Name]",
       "role": "Executive Chairman",
@@ -21,5 +22,6 @@
       "role": "Director, Business Development & Contract",
       "bio": "With a background spanning architecture, quantity surveying, and commercial contracting, the Director of Business Development and Contract is responsible for client engagement, tendering, and contract administration. She has played a key role in securing turnkey contracts with Japanese multinationals and developing SQA's reputation as a trusted partner for cross-border corporate clients. She also supports the Group's co-development and joint-venture initiatives with landowners."
     }
-  ]
+  ],
+  "keyManagement": []
 }

@@ -151,29 +151,71 @@ function projectCardHTML(p, status, i) {
   </article>`;
 }
 
+// Jobs as flip cards (Careers page)
 async function mountJobs() {
   const mount = document.getElementById('jobsMount');
   if (!mount) return;
   const data = await loadJSON('data/jobs.json');
   if (!data || !data.jobs || !data.jobs.length) {
-    mount.innerHTML = '<div class="job-row"><div class="job-title">No open positions at the moment</div><div class="job-dept">Please email your resume to <a href="mailto:careers@sqabuilders.com">careers@sqabuilders.com</a></div></div>';
+    mount.innerHTML = `<div style="padding: 40px; text-align: center; background: var(--white); border: 1px solid var(--gray-light); border-radius: var(--radius);">
+      <h3 style="font-size: 1.05rem; color: var(--ink); margin-bottom: 8px;">No open positions at the moment.</h3>
+      <p style="color: var(--steel);">Please send your resume to <a href="mailto:careers@sqabuilders.com" style="color: var(--blue); font-weight: 600;">careers@sqabuilders.com</a> — we'll keep you in mind as new roles open.</p>
+    </div>`;
     return;
   }
-  mount.innerHTML = `<div class="job-row head"><div>Position</div><div>Department</div><div>Location</div><div>&nbsp;</div></div>` +
-    data.jobs.map(j => `<div class="job-row">
-      <div class="job-title">${j.title}</div>
-      <div class="job-dept">${j.department}</div>
-      <div class="job-loc">${j.location}</div>
-      <div><a class="btn-link" href="mailto:careers@sqabuilders.com?subject=Application – ${encodeURIComponent(j.title)}">Apply</a></div>
-    </div>`).join('');
+  mount.innerHTML = data.jobs.map(j => `
+    <article class="flip-card" data-job="${encodeURIComponent(j.title)}">
+      <div class="flip-card-inner">
+        <div class="flip-face flip-front">
+          <div>
+            <div class="flip-dept">${j.department}</div>
+            <h3>${j.title}</h3>
+            <div class="flip-loc">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              ${j.location}
+            </div>
+          </div>
+          <div class="flip-cta">View Description</div>
+        </div>
+        <div class="flip-face flip-back">
+          <button type="button" class="flip-close" aria-label="Close">&times;</button>
+          <h3>${j.title}</h3>
+          ${j.summary ? `<p class="flip-summary">${j.summary}</p>` : ''}
+          ${j.responsibilities && j.responsibilities.length ? `<strong style="font-size:0.7rem; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold); display: block; margin-bottom: 6px;">Responsibilities</strong><ul class="flip-list">${j.responsibilities.map(r => `<li>${r}</li>`).join('')}</ul>` : ''}
+          ${j.requirements && j.requirements.length ? `<strong style="font-size:0.7rem; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold); display: block; margin-bottom: 6px;">Requirements</strong><ul class="flip-list">${j.requirements.map(r => `<li>${r}</li>`).join('')}</ul>` : ''}
+          <a class="flip-apply" href="mailto:careers@sqabuilders.com?subject=Application — ${encodeURIComponent(j.title)}">Apply Now &rarr;</a>
+        </div>
+      </div>
+    </article>
+  `).join('');
+
+  // Click-to-flip behaviour
+  mount.querySelectorAll('.flip-card').forEach(card => {
+    card.addEventListener('click', (e) => {
+      if (e.target.closest('.flip-apply')) return;     // let the email link work
+      if (e.target.closest('.flip-close')) {
+        card.classList.remove('flipped');
+        return;
+      }
+      card.classList.toggle('flipped');
+    });
+  });
 }
 
+// Leaders — renders Board of Directors + optional Key Management
 async function mountLeaders() {
-  const mount = document.getElementById('leadersMount');
-  if (!mount) return;
-  const data = await loadJSON('data/management.json');
-  if (!data || !data.leaders) return;
-  mount.innerHTML = data.leaders.map(l => `<article class="leader">
+  const boardMount = document.getElementById('boardMount');
+  const keyMount = document.getElementById('keyManagementMount');
+  const keySection = document.getElementById('keyManagementSection');
+  if (!boardMount) return;
+  const data = await loadJSON('data/leadership.json') || await loadJSON('data/management.json');
+  if (!data) return;
+
+  const boardList = data.board || data.leaders || [];
+  const keyList = data.keyManagement || [];
+  const showKey = !!(data.showKeyManagement && keyList.length);
+
+  const renderCard = (l) => `<article class="leader">
     <div class="leader-photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 10-16 0"/></svg></div>
     <div class="leader-body">
       <h3>${l.name}</h3>
@@ -181,13 +223,81 @@ async function mountLeaders() {
       <div class="leader-bio">${l.bio}</div>
       <button class="leader-toggle" type="button"><span class="toggle-label">Read More</span></button>
     </div>
-  </article>`).join('');
-  // Re-bind toggles now that cards exist
-  mount.querySelectorAll('.leader-toggle').forEach(btn => {
+  </article>`;
+
+  boardMount.innerHTML = boardList.map(renderCard).join('');
+
+  if (keyMount && keySection) {
+    if (showKey) {
+      keySection.style.display = '';
+      keyMount.innerHTML = keyList.map(renderCard).join('');
+    } else {
+      keySection.style.display = 'none';
+    }
+  }
+
+  document.querySelectorAll('.leaders-grid .leader-toggle').forEach(btn => {
     btn.addEventListener('click', () => {
       const card = btn.closest('.leader');
       card.classList.toggle('expanded');
       btn.querySelector('.toggle-label').textContent = card.classList.contains('expanded') ? 'Read Less' : 'Read More';
+    });
+  });
+}
+
+// Milestones timeline
+async function mountMilestones() {
+  const mount = document.getElementById('milestonesMount');
+  if (!mount) return;
+  const data = await loadJSON('data/milestones.json');
+  if (!data || !data.milestones) return;
+  mount.innerHTML = data.milestones.map(m => `
+    <div class="milestone">
+      <div class="milestone-year">${m.year}</div>
+      <div class="milestone-title">${m.title}</div>
+      <div class="milestone-body">${m.body}</div>
+    </div>
+  `).join('');
+}
+
+// Awards — tabs + cards
+async function mountAwards() {
+  const tabsMount = document.getElementById('awardsTabs');
+  const panelsMount = document.getElementById('awardsPanels');
+  if (!tabsMount || !panelsMount) return;
+  const data = await loadJSON('data/awards.json');
+  if (!data || !data.tabs) return;
+
+  const iconSVG = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>`;
+
+  tabsMount.innerHTML = data.tabs.map((t, i) => `<button class="tab-btn ${i===0?'active':''}" data-tab="${t.id}">${t.label}</button>`).join('');
+
+  panelsMount.innerHTML = data.tabs.map((t, i) => `
+    <div class="tab-panel ${i===0?'active':''}" id="tab-${t.id}">
+      ${t.intro ? `<p class="section-lead" style="margin-bottom: 36px;">${t.intro}</p>` : ''}
+      <div class="awards-grid">
+        ${(t.items||[]).map(item => `
+          <article class="award-card">
+            <div class="award-badge">${iconSVG}</div>
+            <div class="award-body">
+              ${item.year ? `<div class="award-year">${item.year}</div>` : ''}
+              <h4>${item.title}</h4>
+              ${item.score ? `<span class="award-score">${item.score}</span>` : ''}
+              ${item.description ? `<p>${item.description}</p>` : ''}
+            </div>
+          </article>
+        `).join('')}
+      </div>
+    </div>
+  `).join('');
+
+  tabsMount.querySelectorAll('.tab-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      tabsMount.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      panelsMount.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+      const target = document.getElementById('tab-' + btn.dataset.tab);
+      if (target) target.classList.add('active');
     });
   });
 }
@@ -197,3 +307,5 @@ mountCurrentProjects();
 mountCompletedProjects();
 mountJobs();
 mountLeaders();
+mountMilestones();
+mountAwards();

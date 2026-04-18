@@ -1,16 +1,141 @@
 {
-  "_note": "To add a new open position, add an object to the 'jobs' array with title, department, and location. Leave the array empty to show 'No open positions'.",
+  "_note": "Each job renders as a flip card on the Careers page. The FRONT shows title / department / location. The BACK shows summary + responsibilities + requirements + Apply button. To hide ALL jobs and show a 'no openings' message, set jobs to an empty array: []",
   "jobs": [
-    { "title": "Project Manager (Industrial Projects)", "department": "Construction", "location": "Shah Alam, Selangor" },
-    { "title": "Site Engineer", "department": "Construction", "location": "Klang Valley" },
-    { "title": "Architect", "department": "Architecture & Engineering", "location": "HQ – Selangor" },
-    { "title": "Mechanical & Electrical Engineer", "department": "M&E", "location": "HQ – Selangor" },
-    { "title": "Quantity Surveyor", "department": "Contracts & Cost Management", "location": "HQ – Selangor" },
-    { "title": "Safety & Health Officer", "department": "Safety", "location": "Project Sites" },
-    { "title": "Business Development Executive", "department": "Business Development", "location": "HQ – Selangor" },
-    { "title": "Accounts Executive", "department": "Finance", "location": "HQ – Selangor" },
-    { "title": "Human Resource Executive", "department": "Human Resources", "location": "HQ – Selangor" },
-    { "title": "Procurement Executive", "department": "Procurement", "location": "HQ – Selangor" },
-    { "title": "Logistics Coordinator", "department": "Logistics", "location": "HQ – Selangor" }
+    {
+      "title": "Project Manager (Industrial Projects)",
+      "department": "Construction",
+      "location": "Shah Alam, Selangor",
+      "summary": "Lead the end-to-end delivery of large-scale industrial construction projects — from mobilisation to handover.",
+      "responsibilities": [
+        "Overall responsibility for site execution, cost, quality, and safety",
+        "Client and consultant management at project level",
+        "Subcontractor coordination and progress oversight",
+        "Risk, variation, and contractual administration"
+      ],
+      "requirements": [
+        "Degree in Civil / Structural Engineering or equivalent",
+        "8+ years main-contractor experience on industrial projects",
+        "Strong knowledge of Malaysian building codes and CIDB requirements",
+        "Demonstrated delivery of turnkey or design-and-build projects"
+      ]
+    },
+    {
+      "title": "Site Engineer",
+      "department": "Construction",
+      "location": "Klang Valley",
+      "summary": "Supervise day-to-day site construction activities and drive on-time, on-quality delivery under the Project Manager.",
+      "responsibilities": [
+        "Daily supervision of trade contractors and site teams",
+        "Setting out, quality checks, and site reporting",
+        "Coordination with design team on RFIs and site queries",
+        "Safety walk-downs and toolbox talk support"
+      ],
+      "requirements": [
+        "Degree / Diploma in Civil Engineering or related",
+        "3+ years site experience",
+        "Strong site coordination and documentation skills"
+      ]
+    },
+    {
+      "title": "Architect",
+      "department": "Architecture & Design",
+      "location": "HQ — Selangor",
+      "summary": "Support SQA's turnkey and design-and-build capability with architectural design, coordination, and documentation.",
+      "responsibilities": [
+        "Design development for industrial, commercial, and residential schemes",
+        "Authority submissions and approvals coordination",
+        "Design-to-cost coordination with QS and project teams",
+        "Oversight of consultants where used on individual projects"
+      ],
+      "requirements": [
+        "Degree / Bachelor in Architecture (LAM Part II preferred)",
+        "5+ years post-qualification experience in Malaysia",
+        "Strong BIM / Revit or equivalent 3D modelling"
+      ]
+    },
+    {
+      "title": "Mechanical & Electrical Engineer",
+      "department": "M&E",
+      "location": "HQ — Selangor",
+      "summary": "Lead design review, coordination, and site commissioning of mechanical and electrical systems across projects.",
+      "responsibilities": [
+        "Review and coordination of M&E design across trades",
+        "Value-engineering proposals and procurement support",
+        "Site installation supervision and commissioning sign-off"
+      ],
+      "requirements": [
+        "Degree in Mechanical / Electrical Engineering",
+        "5+ years M&E consultancy or contractor experience",
+        "Experience with industrial / cold-chain / commercial fit-out a plus"
+      ]
+    },
+    {
+      "title": "Quantity Surveyor",
+      "department": "Contracts & Cost Management",
+      "location": "HQ — Selangor",
+      "summary": "Support commercial management of SQA projects — from tendering through final accounts.",
+      "responsibilities": [
+        "Cost planning, BQ preparation, and tender analysis",
+        "Variation and progress claim management",
+        "Sub-contract packaging and letting",
+        "Final accounts and cost close-out"
+      ],
+      "requirements": [
+        "Degree in Quantity Surveying (RISM / BQSM membership a plus)",
+        "4+ years main-contractor QS experience",
+        "Strong familiarity with PAM and PWD contract forms"
+      ]
+    },
+    {
+      "title": "Safety & Health Officer",
+      "department": "Safety",
+      "location": "Project Sites",
+      "summary": "Champion SQA's safety culture on site — from daily toolbox meetings to weekly appraisal boards.",
+      "responsibilities": [
+        "Site safety inspection, hazard identification, and reporting",
+        "Lead daily toolbox meetings and safety briefings",
+        "Maintain weekly safety appraisal reports for management review",
+        "Incident investigation and corrective action follow-through"
+      ],
+      "requirements": [
+        "NIOSH-certified Safety & Health Officer (registered with DOSH)",
+        "5+ years site safety experience on main-contractor projects",
+        "Hands-on, disciplined, and unafraid to raise standards"
+      ]
+    },
+    {
+      "title": "Business Development Executive",
+      "department": "Business Development",
+      "location": "HQ — Selangor",
+      "summary": "Support the tender pipeline, client engagement, and new business development activities of SQA.",
+      "responsibilities": [
+        "Tender tracking, pre-qualification, and proposal support",
+        "Client and consultant relationship management",
+        "Market research and opportunity screening",
+        "CRM upkeep and reporting to senior management"
+      ],
+      "requirements": [
+        "Degree in Construction / Engineering / Business or related",
+        "3+ years construction industry experience",
+        "Strong written and interpersonal skills"
+      ]
+    },
+    {
+      "title": "Accounts Executive",
+      "department": "Finance",
+      "location": "HQ — Selangor",
+      "summary": "Handle day-to-day accounting, reporting, and payment processing for SQA Builders.",
+      "responsibilities": [
+        "Accounts payable and receivable",
+        "Monthly closing and management reporting support",
+        "Statutory and tax submissions",
+        "Project cost tracking in coordination with QS team"
+      ],
+      "requirements": [
+        "Degree / Professional qualification in Accounting",
+        "3+ years relevant experience, preferably in construction",
+        "Comfortable with accounting systems (SQL / AutoCount / similar)"
+      ]
+    }
   ]
 }

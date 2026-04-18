@@ -1,0 +1,93 @@
+{
+  "_note": "Awards & Accolades — grouped into tabs by awarding body. Each tab has a 'label' (tab name) and an 'items' array. An item may include: year, title, score (e.g. '85%' for QLASSIC), description, and optionally a 'icon' key (purely decorative).",
+  "tabs": [
+    {
+      "id": "iso",
+      "label": "ISO Certifications",
+      "intro": "SQA Builders maintains internationally recognised ISO certifications covering quality, safety, and environmental management.",
+      "items": [
+        {
+          "year": "Active",
+          "title": "ISO 9001 — Quality Management System",
+          "description": "Certified by [Certifying Body] for the provision of construction, project and design management services."
+        },
+        {
+          "year": "Active",
+          "title": "ISO 45001 — Occupational Health &amp; Safety",
+          "description": "Certified for the company's Occupational Health and Safety management system across all project sites."
+        },
+        {
+          "year": "Active",
+          "title": "ISO 14001 — Environmental Management",
+          "description": "Certified for environmental management practices covering site operations and corporate offices."
+        }
+      ]
+    },
+    {
+      "id": "qlassic",
+      "label": "QLASSIC",
+      "intro": "QLASSIC (Quality Assessment System in Construction) is the Malaysian industry benchmark for workmanship quality — assessed independently by CIDB. The projects below reflect representative scores achieved by SQA Builders.",
+      "items": [
+        {
+          "year": "2024",
+          "title": "[Project Name — Industrial Development]",
+          "score": "85%",
+          "description": "Large-span industrial facility delivered for a Japanese logistics operator."
+        },
+        {
+          "year": "2023",
+          "title": "[Project Name — Commercial Office]",
+          "score": "82%",
+          "description": "Flagship automotive showroom and service centre."
+        },
+        {
+          "year": "2022",
+          "title": "[Project Name — Institutional]",
+          "score": "80%",
+          "description": "School block expansion delivered in phased works."
+        }
+      ]
+    },
+    {
+      "id": "shassic",
+      "label": "SHASSIC",
+      "intro": "SHASSIC (Safety and Health Assessment System in Construction) independently evaluates contractor safety management practices. SQA's SHASSIC performance reflects the firm's commitment to site safety and Assurance.",
+      "items": [
+        {
+          "year": "2024",
+          "title": "[Project Name — Industrial Warehouse]",
+          "score": "Band A",
+          "description": "SHASSIC Band A rating — reflecting strong safety culture and management systems."
+        },
+        {
+          "year": "2023",
+          "title": "[Project Name — Manufacturing Facility]",
+          "score": "Band A",
+          "description": "Consistent safety performance across all assessment areas."
+        }
+      ]
+    },
+    {
+      "id": "commendations",
+      "label": "Commendations & Testimonials",
+      "intro": "Letters of commendation and client testimonials received from clients, consultants, and project stakeholders.",
+      "items": [
+        {
+          "year": "2024",
+          "title": "Letter of Commendation — Japanese Logistics Operator",
+          "description": "Received in recognition of on-time delivery and quality workmanship on a regional distribution facility."
+        },
+        {
+          "year": "2023",
+          "title": "Testimonial — Premium Automotive Principal",
+          "description": "Acknowledgement for successful delivery of brand-aligned flagship showroom."
+        },
+        {
+          "year": "2022",
+          "title": "Testimonial — Private Education Group",
+          "description": "Appreciation for minimising operational disruption during phased school expansion."
+        }
+      ]
+    }
+  ]
+}
