@@ -59,3 +59,43 @@ function initProjectFilter() {
 }
 
 initProjectFilter();
+
+// Hero slider
+function initHeroSlider() {
+  const slides = document.querySelectorAll('.slide');
+  const dots = document.querySelectorAll('.dot');
+  const prev = document.getElementById('prevSlide');
+  const next = document.getElementById('nextSlide');
+  if (!slides.length) return;
+
+  let current = 0;
+  let timer;
+
+  function goTo(index) {
+    slides[current].classList.remove('active');
+    dots[current].classList.remove('active');
+    current = (index + slides.length) % slides.length;
+    slides[current].classList.add('active');
+    dots[current].classList.add('active');
+  }
+
+  function auto() {
+    timer = setInterval(() => goTo(current + 1), 6000);
+  }
+
+  function reset() {
+    clearInterval(timer);
+    auto();
+  }
+
+  dots.forEach((dot, i) => {
+    dot.addEventListener('click', () => { goTo(i); reset(); });
+  });
+
+  if (prev) prev.addEventListener('click', () => { goTo(current - 1); reset(); });
+  if (next) next.addEventListener('click', () => { goTo(current + 1); reset(); });
+
+  auto();
+}
+
+initHeroSlider();

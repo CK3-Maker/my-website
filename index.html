@@ -11,7 +11,6 @@
 </head>
 <body>
 
-  <!-- Navigation -->
   <nav class="nav" id="nav">
     <div class="nav-inner">
       <a href="index.html" class="logo">CK<span>Construction</span></a>
@@ -27,65 +26,180 @@
     </div>
   </nav>
 
-  <!-- Hero -->
-  <header class="hero">
-    <div class="hero-content">
-      <p class="hero-tag">Trusted &bull; Reliable &bull; Professional</p>
-      <h1 class="hero-title">We Build Your<br>Vision Into Reality</h1>
-      <p class="hero-sub">Delivering quality construction services with integrity and precision for over a decade.</p>
-      <div class="hero-buttons">
-        <a href="services.html" class="btn btn-white">Our Services</a>
-        <a href="contact.html" class="btn btn-outline">Get a Quote</a>
+  <!-- Hero Slider -->
+  <header class="hero-slider" id="heroSlider">
+    <div class="slide active" data-slide="1">
+      <div class="slide-content">
+        <p class="hero-tag">Building Excellence</p>
+        <h1 class="hero-title">We Build Your<br>Vision Into Reality</h1>
+        <p class="hero-sub">Delivering quality construction services with integrity and precision for over a decade.</p>
+        <div class="hero-buttons">
+          <a href="services.html" class="btn btn-white">Our Services</a>
+          <a href="contact.html" class="btn btn-outline">Get a Quote</a>
+        </div>
       </div>
     </div>
-    <div class="hero-scroll">
-      <span>Scroll</span>
-      <div class="scroll-line"></div>
+    <div class="slide" data-slide="2">
+      <div class="slide-content">
+        <p class="hero-tag">Quality &bull; Safety &bull; Trust</p>
+        <h1 class="hero-title">Craftsmanship<br>That Stands the Test of Time</h1>
+        <p class="hero-sub">From foundation to finish, we deliver construction projects engineered for longevity and built with care.</p>
+        <div class="hero-buttons">
+          <a href="projects.html" class="btn btn-white">View Our Work</a>
+        </div>
+      </div>
     </div>
+    <div class="slide" data-slide="3">
+      <div class="slide-content">
+        <p class="hero-tag">Sustainable Construction</p>
+        <h1 class="hero-title">Building Today<br>For a Better Tomorrow</h1>
+        <p class="hero-sub">Integrating sustainable practices and innovative technology into every project we deliver.</p>
+        <div class="hero-buttons">
+          <a href="sustainability.html" class="btn btn-white">Our ESG Commitment</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slider controls -->
+    <div class="slider-dots" id="sliderDots">
+      <button class="dot active" data-index="0" aria-label="Slide 1"></button>
+      <button class="dot" data-index="1" aria-label="Slide 2"></button>
+      <button class="dot" data-index="2" aria-label="Slide 3"></button>
+    </div>
+    <button class="slider-arrow prev" id="prevSlide" aria-label="Previous slide">&lsaquo;</button>
+    <button class="slider-arrow next" id="nextSlide" aria-label="Next slide">&rsaquo;</button>
   </header>
 
-  <!-- About Preview -->
+  <!-- Mission Statement -->
+  <section class="section bg-light section-center">
+    <div class="container">
+      <div class="section-label">Our Mission</div>
+      <h2 class="section-title">Committed to Construction Excellence</h2>
+      <p class="section-desc" style="margin: 0 auto; font-size: 1.1rem;">We strive to deliver exceptional construction services through quality workmanship, innovative solutions, and an unwavering commitment to safety and sustainability — creating spaces where people live, work, and thrive.</p>
+    </div>
+  </section>
+
+  <!-- Core Values -->
   <section class="section">
     <div class="container">
-      <div class="about-grid">
-        <div class="about-text reveal">
-          <div class="section-label">About Us</div>
-          <h2>A construction company committed to quality and safety.</h2>
-          <p>CK Construction is a full-service construction firm specializing in residential, commercial, and industrial projects. With over 15 years of experience, we bring expertise, reliability, and craftsmanship to every job.</p>
-          <p>Our team of licensed professionals is dedicated to delivering projects on time and within budget.</p>
-          <a href="about.html" class="btn btn-outline-blue" style="margin-top: 16px;">Learn More</a>
+      <div class="values-grid">
+        <div class="values-text reveal">
+          <div class="section-label">Our Core Values</div>
+          <h2 style="font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 700; color: var(--gray-900); margin-bottom: 20px; line-height: 1.35;">The principles that guide everything we build.</h2>
+          <p style="color: var(--gray-600); line-height: 1.8; margin-bottom: 28px;">Our values are not just words on a wall — they're the foundation of every project, every partnership, and every decision we make as a company.</p>
+          <div class="values-list">
+            <div class="value-item">
+              <span class="value-num">01</span>
+              <div>
+                <h3>Integrity</h3>
+                <p>Honest, transparent dealings with every client, partner, and employee.</p>
+              </div>
+            </div>
+            <div class="value-item">
+              <span class="value-num">02</span>
+              <div>
+                <h3>Quality</h3>
+                <p>Uncompromising standards in craftsmanship, materials, and execution.</p>
+              </div>
+            </div>
+            <div class="value-item">
+              <span class="value-num">03</span>
+              <div>
+                <h3>Safety</h3>
+                <p>Zero-harm culture protecting our people, partners, and communities.</p>
+              </div>
+            </div>
+            <div class="value-item">
+              <span class="value-num">04</span>
+              <div>
+                <h3>Innovation</h3>
+                <p>Embracing new technology and methods to build better and smarter.</p>
+              </div>
+            </div>
+            <div class="value-item">
+              <span class="value-num">05</span>
+              <div>
+                <h3>Sustainability</h3>
+                <p>Building responsibly with the future of our planet in mind.</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="about-stats reveal">
-          <div class="stat">
-            <span class="stat-number">15+</span>
-            <span class="stat-label">Years in Business</span>
-          </div>
-          <div class="stat">
-            <span class="stat-number">200+</span>
-            <span class="stat-label">Projects Completed</span>
-          </div>
-          <div class="stat">
-            <span class="stat-number">50+</span>
-            <span class="stat-label">Team Members</span>
-          </div>
-          <div class="stat">
-            <span class="stat-number">100%</span>
-            <span class="stat-label">Safety Record</span>
+        <div class="values-visual reveal">
+          <div class="values-image">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.5"><path d="M3 21h18"/><path d="M5 21V7l8-4v18"/><path d="M19 21V11l-6-4"/><path d="M9 9v.01"/><path d="M9 12v.01"/><path d="M9 15v.01"/><path d="M9 18v.01"/></svg>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Services Preview -->
-  <section class="section bg-light">
+  <!-- Innovation Feature -->
+  <section class="section innovation-section">
     <div class="container">
-      <div class="section-label">What We Do</div>
-      <h2 class="section-title">Our Services</h2>
-      <p class="section-desc">Comprehensive construction solutions tailored to meet the unique requirements of every project.</p>
+      <div class="innovation-box reveal">
+        <div class="section-label" style="color: var(--white); opacity: 0.8;">Embracing Innovation</div>
+        <h2>Modern Methods &amp; Technology</h2>
+        <p>We integrate cutting-edge construction technology to deliver projects faster, safer, and with greater precision — from digital modeling to industrialized building systems.</p>
+        <div class="innovation-features">
+          <div class="innovation-feature">
+            <strong>BIM</strong>
+            <span>Building Information Modeling for accurate project visualization and coordination.</span>
+          </div>
+          <div class="innovation-feature">
+            <strong>IBS</strong>
+            <span>Industrialised Building Systems for faster, higher-quality construction.</span>
+          </div>
+          <div class="innovation-feature">
+            <strong>Safety-First</strong>
+            <span>Advanced site monitoring and safety protocols on every project.</span>
+          </div>
+          <div class="innovation-feature">
+            <strong>Green Tech</strong>
+            <span>Energy-efficient systems and sustainable material sourcing.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="section bg-light">
+    <div class="container section-center">
+      <div class="section-label">Our Track Record</div>
+      <h2 class="section-title">Trusted by Clients Across the Region</h2>
+      <div class="stats-row" style="margin-top: 40px;">
+        <div class="stat reveal">
+          <span class="stat-number">15+</span>
+          <span class="stat-label">Years in Business</span>
+        </div>
+        <div class="stat reveal">
+          <span class="stat-number">200+</span>
+          <span class="stat-label">Projects Completed</span>
+        </div>
+        <div class="stat reveal">
+          <span class="stat-number">50+</span>
+          <span class="stat-label">Team Members</span>
+        </div>
+        <div class="stat reveal">
+          <span class="stat-number">100%</span>
+          <span class="stat-label">Safety Record</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Preview -->
+  <section class="section">
+    <div class="container">
+      <div class="section-center">
+        <div class="section-label">What We Do</div>
+        <h2 class="section-title">Our Services</h2>
+        <p class="section-desc">Comprehensive construction solutions tailored to your project's unique requirements.</p>
+      </div>
       <div class="services-grid">
         <div class="service-card reveal">
-          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l8-4v18"/><path d="M19 21V11l-6-4"/><path d="M9 9v.01"/><path d="M9 12v.01"/><path d="M9 15v.01"/><path d="M9 18v.01"/></svg></div>
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l8-4v18"/><path d="M19 21V11l-6-4"/></svg></div>
           <h3>Building Construction</h3>
           <p>Residential and commercial building construction from planning through completion.</p>
         </div>
@@ -115,7 +229,6 @@
     </div>
   </section>
 
-  <!-- Footer -->
   <footer class="footer">
     <div class="container">
       <div class="footer-top">
@@ -142,9 +255,7 @@
           <p>info@ckconstruction.com</p>
         </div>
       </div>
-      <div class="footer-bottom">
-        <p>&copy; 2026 CK Construction. All rights reserved.</p>
-      </div>
+      <div class="footer-bottom"><p>&copy; 2026 CK Construction. All rights reserved.</p></div>
     </div>
   </footer>
 
