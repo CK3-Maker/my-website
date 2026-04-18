@@ -1,0 +1,25 @@
+{
+  "_note": "Update names, roles, and biographies here. Each entry renders a leader card on the Management page.",
+  "leaders": [
+    {
+      "name": "[Executive Chairman Name]",
+      "role": "Executive Chairman",
+      "bio": "An industry veteran with over three decades of experience in the Malaysian construction sector, the Executive Chairman provides strategic direction and oversight across the SQA Group. His leadership has been instrumental in shaping the company's Malaysian-Japanese identity and its reputation for turnkey project delivery. He maintains close relationships with institutional clients, joint-venture partners, and landowners, and continues to guide the Group's long-term growth in construction and property development."
+    },
+    {
+      "name": "[Managing Director Name]",
+      "role": "Managing Director",
+      "bio": "The Managing Director oversees the operational and commercial direction of SQA Builders, with a strong background in construction management and a deep understanding of both Malaysian and Japanese project practices. He leads the senior management team in driving project execution, cost discipline, client satisfaction, and the continued refinement of the Group's Project Management Methodology (PMM). He plays a central role in maintaining SQA's CIDB G7 operating standards and expanding the firm's presence across industrial, commercial, residential, and institutional sectors."
+    },
+    {
+      "name": "[Chief Executive Officer Name]",
+      "role": "Chief Executive Officer",
+      "bio": "Responsible for day-to-day execution across all active projects, the Chief Executive Officer brings strong engineering and delivery experience to the Group. His focus is on ensuring that every project is delivered with speed, within budget, and to the high quality standards expected of SQA's Japanese clients. He champions the firm's safety culture, subcontractor discipline, and continuous improvement of site reporting systems."
+    },
+    {
+      "name": "[Director, Business Development & Contract Name]",
+      "role": "Director, Business Development & Contract",
+      "bio": "With a background spanning architecture, quantity surveying, and commercial contracting, the Director of Business Development and Contract is responsible for client engagement, tendering, and contract administration. She has played a key role in securing turnkey contracts with Japanese multinationals and developing SQA's reputation as a trusted partner for cross-border corporate clients. She also supports the Group's co-development and joint-venture initiatives with landowners."
+    }
+  ]
+}

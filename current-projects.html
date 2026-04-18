@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Our Projects — SQA Builders Sdn Bhd</title>
+  <title>Current Projects — SQA Builders Sdn Bhd</title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -27,64 +27,40 @@
 
   <header class="page-hero">
     <div class="container">
-      <div class="breadcrumb"><a href="index.html">Home</a> <span>/</span> <span>Projects</span> <span>/</span> <span>Our Projects</span></div>
-      <h1 class="page-title">Projects delivered across every major building sector.</h1>
-      <p class="page-sub">From turnkey industrial facilities and commercial showrooms to residential developments and institutional landmarks — SQA has built for a diverse range of clients and operating requirements.</p>
+      <div class="breadcrumb"><a href="index.html">Home</a> <span>/</span> <a href="projects.html">Projects</a> <span>/</span> <span>Current Projects</span></div>
+      <h1 class="page-title">Projects currently under construction.</h1>
+      <p class="page-sub">An overview of the projects SQA is actively delivering. Details are updated as new contracts commence and milestones are reached.</p>
     </div>
   </header>
 
   <section class="section">
     <div class="container">
       <div class="section-head">
-        <div class="eyebrow">By Sector</div>
-        <h2 class="section-title">Select a sector to explore our experience.</h2>
-        <p class="section-lead">Each sector presents its own technical, regulatory, and commercial requirements. SQA has built a track record across all four major sectors listed below.</p>
+        <div class="eyebrow">Filter</div>
+        <h2 class="section-title">Ongoing by sector.</h2>
       </div>
 
-      <div class="sectors-grid">
-        <a href="completed-projects.html?filter=Industrial" class="sector-card industrial" id="industrial">
-          <div class="sector-inner">
-            <span class="sector-num">01 — Industrial</span>
-            <h3>Industrial</h3>
-            <p>Factories, warehouses, logistics hubs, cold storage facilities, manufacturing plants, and turnkey industrial buildings for Malaysian and Japanese operators.</p>
-          </div>
-        </a>
-        <a href="completed-projects.html?filter=Commercial" class="sector-card commercial" id="commercial">
-          <div class="sector-inner">
-            <span class="sector-num">02 — Commercial</span>
-            <h3>Commercial</h3>
-            <p>Corporate offices, showrooms, shop-offices, and branded automotive retail spaces — including flagship outlets delivered to principal standards.</p>
-          </div>
-        </a>
-        <a href="completed-projects.html?filter=Residential" class="sector-card residential" id="residential">
-          <div class="sector-inner">
-            <span class="sector-num">03 — Residential</span>
-            <h3>Residential</h3>
-            <p>Private bungalows, condominium towers, and staged residential developments — delivered with attention to finish quality and resident experience.</p>
-          </div>
-        </a>
-        <a href="completed-projects.html?filter=Institutional" class="sector-card institutional" id="institutional">
-          <div class="sector-inner">
-            <span class="sector-num">04 — Institutional</span>
-            <h3>Institutional</h3>
-            <p>Schools, academies, campus extensions, and diplomatic projects requiring heightened security and documentation protocols.</p>
-          </div>
-        </a>
+      <div class="project-filter">
+        <button class="filter-chip active" data-filter="all">All</button>
+        <button class="filter-chip" data-filter="Industrial">Industrial</button>
+        <button class="filter-chip" data-filter="Commercial">Commercial</button>
+        <button class="filter-chip" data-filter="Residential">Residential</button>
+        <button class="filter-chip" data-filter="Institutional">Institutional</button>
       </div>
+
+      <!-- Dynamically mounted from data/projects.json -->
+      <div class="projects-grid" id="currentProjectsMount"></div>
     </div>
   </section>
 
-  <section class="section bg-light">
+  <section class="cta-band">
     <div class="container">
-      <div class="section-head center">
-        <div class="eyebrow">Explore More</div>
-        <h2 class="section-title">View by project status.</h2>
-        <p class="section-lead">For a detailed view of our ongoing and completed works, explore the dedicated project archives.</p>
-      </div>
-      <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-top: 20px;">
-        <a href="specialty.html" class="btn btn-dark">Our Specialty &amp; Technical Strengths</a>
-        <a href="current-projects.html" class="btn btn-ghost">Current Projects</a>
-        <a href="completed-projects.html" class="btn btn-ghost">Completed Projects Archive</a>
+      <div class="cta-band-grid">
+        <div><h2>Interested in joining our project pipeline?</h2><p>Consultants, subcontractors, and suppliers are welcome to engage with our project teams for upcoming tenders and packages.</p></div>
+        <div class="cta-band-ctas">
+          <a href="contact.html" class="btn btn-gold">Get in Touch <span class="arrow">&rarr;</span></a>
+          <a href="completed-projects.html" class="btn btn-outline">View Completed Projects</a>
+        </div>
       </div>
     </div>
   </section>

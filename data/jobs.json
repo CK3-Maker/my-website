@@ -1,0 +1,16 @@
+{
+  "_note": "To add a new open position, add an object to the 'jobs' array with title, department, and location. Leave the array empty to show 'No open positions'.",
+  "jobs": [
+    { "title": "Project Manager (Industrial Projects)", "department": "Construction", "location": "Shah Alam, Selangor" },
+    { "title": "Site Engineer", "department": "Construction", "location": "Klang Valley" },
+    { "title": "Architect", "department": "Architecture & Engineering", "location": "HQ – Selangor" },
+    { "title": "Mechanical & Electrical Engineer", "department": "M&E", "location": "HQ – Selangor" },
+    { "title": "Quantity Surveyor", "department": "Contracts & Cost Management", "location": "HQ – Selangor" },
+    { "title": "Safety & Health Officer", "department": "Safety", "location": "Project Sites" },
+    { "title": "Business Development Executive", "department": "Business Development", "location": "HQ – Selangor" },
+    { "title": "Accounts Executive", "department": "Finance", "location": "HQ – Selangor" },
+    { "title": "Human Resource Executive", "department": "Human Resources", "location": "HQ – Selangor" },
+    { "title": "Procurement Executive", "department": "Procurement", "location": "HQ – Selangor" },
+    { "title": "Logistics Coordinator", "department": "Logistics", "location": "HQ – Selangor" }
+  ]
+}
