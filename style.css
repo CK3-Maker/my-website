@@ -1584,6 +1584,13 @@ img, svg { max-width: 100%; display: block; }
   justify-content: center;
   color: var(--gray-mid);
   font-size: 0.9rem;
+  padding: 20px;
+}
+
+.map-block iframe {
+  width: 100%; height: 100%;
+  border: 0;
+  border-radius: var(--radius);
 }
 
 /* ===== CTA Band ===== */
@@ -2072,6 +2079,56 @@ img, svg { max-width: 100%; display: block; }
   font-size: 0.84rem;
   line-height: 1.55;
   margin-top: 6px;
+}
+
+/* ===== Side CTA (Careers → View Job Openings) ===== */
+.side-cta {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 500;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 22px 16px 20px;
+  background: var(--gold);
+  color: var(--white);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  border-radius: 6px 0 0 6px;
+  box-shadow: -4px 8px 24px rgba(10, 22, 40, 0.25);
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.side-cta:hover {
+  background: #9f7a33;
+  padding-right: 28px;
+  color: var(--white);
+}
+
+.side-cta svg {
+  width: 16px; height: 16px;
+  transition: transform 0.25s;
+}
+
+.side-cta:hover svg { transform: translateX(2px); }
+
+@media (max-width: 900px) {
+  .side-cta {
+    top: auto;
+    right: 20px;
+    bottom: 20px;
+    transform: none;
+    border-radius: 50px;
+    padding: 14px 22px;
+    box-shadow: 0 8px 28px rgba(10, 22, 40, 0.3);
+    font-size: 0.78rem;
+  }
+  .side-cta:hover { padding-right: 22px; }
 }
 
 /* ===== Reveal ===== */

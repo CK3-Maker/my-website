@@ -11,7 +11,7 @@ The site is built with plain HTML/CSS/JavaScript. No build tools, no framework �
 | Company name, tagline, intro text, hero headline | `index.html` |
 | Address, phone, fax, email (in every page's footer) | Footer block in **each** HTML page |
 | Nav links / menu structure | Nav block in **each** HTML page |
-| **Current Projects** (ongoing construction) | `data/projects.json` → `current` array |
+| **On-Going Projects** (under construction) | `data/projects.json` → `current` array |
 | **Completed Projects** archive | `data/projects.json` → `completed` array |
 | **Board of Directors** names, roles, bios | `data/leadership.json` → `board` array |
 | **Key Management** (hidden by default) | `data/leadership.json` → `keyManagement` + set `showKeyManagement: true` |
@@ -19,7 +19,7 @@ The site is built with plain HTML/CSS/JavaScript. No build tools, no framework �
 | **Awards & Accolades** (tabs + items) | `data/awards.json` |
 | **Open positions** (flip cards) | `data/jobs.json` |
 | Culture / events gallery imagery | `careers.html` → `.culture-tile` blocks |
-| Case studies on Specialty page | `specialty.html` |
+| IBS content + Case studies (Design & Build) | `capabilities.html` |
 | Colour palette / fonts | `style.css` (top of file — `:root` variables) |
 
 ---
