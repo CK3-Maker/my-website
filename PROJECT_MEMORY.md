@@ -31,7 +31,7 @@ This document captures all the context, decisions, and content developed during 
   - **Turnkey / Design & Build** delivery
   - **Project and design management**
   - **Major renovation and extension works**
-  - **Industrial Building Systems (IBS)** capability
+  - **Property &amp; industrial development readiness** (build-to-suit, JV, forward funding)
 - Over 25 years of continuous operation (since 1997).
 
 ### Internal methodology
@@ -88,7 +88,7 @@ Design & Build scope includes:
 2. Architectural Design
 3. Engineering Coordination
 4. Cost Planning & Control
-5. IBS & Buildability
+5. Buildability &amp; Construction Methods
 6. Construction & Handover
 
 ---
@@ -105,7 +105,7 @@ Home (index.html)
 │   └── Vision & Mission (vision-mission.html)
 │
 ├── Capabilities (capabilities.html) — leads with Design & Build
-│     ↳ D&B services, advantage, IBS, case studies, PMM
+│     ↳ D&B services, sector capabilities, delivery models, PMM
 │
 ├── Projects (dropdown)
 │   ├── On-Going Projects (current-projects.html)
@@ -169,7 +169,7 @@ Placeholders still needing real data: head-office address (`[Address line 1]` / 
 - Professional, grounded, confident, technically credible, client-facing.
 - No startup slang, no "we're passionate about x", no emoji, no exclamation marks in body copy.
 - Preserves Malaysian-Japanese operational tone.
-- Claims are grounded in specific, verifiable capabilities (CIDB G7, IBS, PMM) rather than vague superlatives.
+- Claims are grounded in specific, verifiable capabilities (CIDB G7, Design &amp; Build, PMM) rather than vague superlatives.
 
 ---
 
@@ -194,7 +194,7 @@ When building company + personal LinkedIn profiles drawing from this memory, key
 3. 25+ years of turnkey delivery across industrial, commercial, residential, and institutional sectors.
 
 **For JV / landowner-facing posts:**
-- Lead with Design & Build under G7 licence, IBS capability, in-house architectural and engineering coordination.
+- Lead with Design &amp; Build under G7 licence, in-house architectural and engineering coordination, and development-ready capability for build-to-suit and JV partners.
 - Target development types: shop-office, industrial developments, residential.
 
 **For recruitment posts:**

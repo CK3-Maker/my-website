@@ -1,20 +1,15 @@
 {
-  "_note": "Corporate milestones rendered as a vertical timeline. Entries are rendered top-to-bottom in the order listed — newest first reads best.",
+  "_note": "Corporate milestones rendered as a vertical timeline. Entries display top-to-bottom in the order listed.",
   "milestones": [
     {
       "year": "2024",
-      "title": "Expanding into Property Development",
-      "body": "SQA formally expands its business beyond contracting, taking positions in selective joint-venture arrangements with landowners — targeting shop-office, industrial, and residential developments."
+      "title": "Strengthening Development-Ready Capabilities",
+      "body": "SQA expands its role beyond contracting — building dedicated development-ready capabilities to support landowners, investors, and industrial occupiers through joint ventures, build-to-suit projects, and forward-funded structures."
     },
     {
-      "year": "2022",
-      "title": "Growing Japanese Corporate Client Base",
-      "body": "Continued delivery of turnkey industrial and logistics projects for Japanese multinationals, strengthening SQA's reputation as a trusted cross-border construction partner."
-    },
-    {
-      "year": "2018",
-      "title": "IBS-Led Industrial Delivery",
-      "body": "SQA significantly scales its use of Industrialised Building Systems (IBS) for large-span industrial projects — delivering faster completion times with improved quality consistency."
+      "year": "2020",
+      "title": "Growth into Turnkey and Design-Build Solutions",
+      "body": "Continued growth of SQA's integrated Design &amp; Build offering — combining in-house design, engineering coordination, MEP, and construction under a single accountable contract for industrial and commercial clients."
     },
     {
       "year": "2015",
@@ -23,18 +18,18 @@
     },
     {
       "year": "2010",
-      "title": "Institutional & Diplomatic Projects",
-      "body": "SQA is selected to deliver institutional work including school expansions and diplomatic chancery buildings — reflecting the firm's ability to handle projects under enhanced compliance protocols."
+      "title": "Major Factories, Warehouses, Offices &amp; Institutional Projects",
+      "body": "Delivery of large-scale industrial and institutional projects across the Klang Valley and northern corridor — including production plants, regional warehouses, corporate offices, and educational facilities."
     },
     {
       "year": "2005",
-      "title": "First Major Turnkey Industrial Contract",
-      "body": "SQA delivers its first large-scale turnkey warehouse and office complex, establishing the template for its combined design, procurement, and construction offering."
+      "title": "Expansion into Industrial &amp; Commercial Construction",
+      "body": "SQA broadens its sector exposure — taking on larger industrial mandates including factories, warehouses, and showroom developments for Malaysian and Japanese corporate clients."
     },
     {
       "year": "1997",
-      "title": "SQA Group Established",
-      "body": "The SQA Group is founded — anchored on three principles: Speed, Quality, and Assurance. From the outset, the Group positions itself as a progressive Malaysian-Japanese contractor."
+      "title": "Establishment of SQA Group",
+      "body": "The SQA Group is founded — anchored on three principles: Speed, Quality, and Assurance. From the outset, the Group positions itself as a Malaysian-Japanese contractor combining Japanese discipline with local construction expertise."
     }
   ]
 }

@@ -302,6 +302,37 @@ async function mountAwards() {
   });
 }
 
+// Animated stat counters (used on Home page stats band)
+(function initStatCounters() {
+  const cells = document.querySelectorAll('[data-count]');
+  if (!cells.length) return;
+
+  const animate = (el) => {
+    const target = parseFloat(el.dataset.count);
+    if (isNaN(target)) return;
+    const prefix = el.dataset.prefix || '';
+    const suffix = el.dataset.suffix || '';
+    const duration = 1400;
+    const start = performance.now();
+
+    const tick = (now) => {
+      const t = Math.min(1, (now - start) / duration);
+      const eased = 1 - Math.pow(1 - t, 3);
+      const value = Math.round(target * eased);
+      el.textContent = prefix + value.toLocaleString() + suffix;
+      if (t < 1) requestAnimationFrame(tick);
+    };
+    requestAnimationFrame(tick);
+  };
+
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { animate(e.target); obs.unobserve(e.target); }
+    });
+  }, { threshold: 0.4 });
+  cells.forEach(c => obs.observe(c));
+})();
+
 // Run mounts
 mountCurrentProjects();
 mountCompletedProjects();

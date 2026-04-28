@@ -19,7 +19,7 @@ The site is built with plain HTML/CSS/JavaScript. No build tools, no framework �
 | **Awards & Accolades** (tabs + items) | `data/awards.json` |
 | **Open positions** (flip cards) | `data/jobs.json` |
 | Culture / events gallery imagery | `careers.html` → `.culture-tile` blocks |
-| IBS content + Case studies (Design & Build) | `capabilities.html` |
+| Sector + Delivery capabilities | `capabilities.html` |
 | Colour palette / fonts | `style.css` (top of file — `:root` variables) |
 | **Company logo** | Replace `logo.svg` (or use a PNG — see §13 below) |
 

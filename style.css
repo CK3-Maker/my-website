@@ -2103,6 +2103,171 @@ img, svg { max-width: 100%; display: block; }
   margin-top: 6px;
 }
 
+/* ===== Video Hero (Home) ===== */
+.hero-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.hero-video-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(135deg, rgba(10,22,40,0.75) 0%, rgba(30,77,140,0.55) 100%),
+    radial-gradient(ellipse at top right, rgba(46,109,164,0.4), transparent 60%);
+  z-index: 1;
+}
+
+.hero-video-pattern {
+  position: absolute; inset: 0;
+  z-index: 1;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='0.05' stroke-width='1'%3E%3Cpath d='M0 30h120M0 60h120M0 90h120M30 0v120M60 0v120M90 0v120'/%3E%3C/g%3E%3C/svg%3E");
+  pointer-events: none;
+}
+
+/* When using video hero, center content fully */
+.hero.hero-video-mode .hero-inner {
+  grid-template-columns: 1fr;
+  text-align: center;
+  max-width: 960px;
+}
+
+.hero.hero-video-mode .hero-lead,
+.hero.hero-video-mode .hero-tagline {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero.hero-video-mode .hero-tagline { justify-content: center; }
+.hero.hero-video-mode .hero-ctas { justify-content: center; }
+
+/* ===== Stats Section (animated counters) ===== */
+.stats-band {
+  background: var(--white);
+  padding: 90px 0;
+  border-top: 1px solid var(--gray-light);
+  border-bottom: 1px solid var(--gray-light);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+}
+
+.stat-cell {
+  text-align: center;
+  padding: 16px 28px;
+  border-right: 1px solid var(--gray-light);
+}
+
+.stat-cell:last-child { border-right: none; }
+
+.stat-cell .stat-num {
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 4.5vw, 3.4rem);
+  font-weight: 800;
+  color: var(--blue);
+  line-height: 1;
+  letter-spacing: -1px;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.stat-cell .stat-label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--steel);
+  display: block;
+}
+
+.stat-cell .stat-context {
+  font-size: 0.85rem;
+  color: var(--gray);
+  margin-top: 8px;
+  display: block;
+}
+
+/* ===== Work With Us Service Cards (Home) ===== */
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.service-tile {
+  background: var(--white);
+  border: 1px solid var(--gray-light);
+  border-radius: var(--radius);
+  padding: 40px 36px;
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  gap: 24px;
+  align-items: start;
+  transition: all 0.25s;
+}
+
+.service-tile:hover {
+  border-color: var(--blue);
+  box-shadow: var(--shadow);
+  transform: translateY(-2px);
+}
+
+.service-tile-icon {
+  width: 56px; height: 56px;
+  background: linear-gradient(145deg, var(--blue-light, #e6f0fa), var(--bg-light));
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--blue);
+}
+
+.service-tile-icon svg { width: 28px; height: 28px; }
+
+.service-tile-num {
+  font-family: var(--font-display);
+  font-size: 0.74rem;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  color: var(--gold);
+  margin-bottom: 8px;
+}
+
+.service-tile h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 10px;
+  line-height: 1.3;
+}
+
+.service-tile p {
+  color: var(--steel);
+  font-size: 0.96rem;
+  line-height: 1.65;
+}
+
+@media (max-width: 1100px) {
+  .stats-grid { grid-template-columns: 1fr 1fr; }
+  .stat-cell:nth-child(2) { border-right: none; }
+  .stat-cell { border-bottom: 1px solid var(--gray-light); padding-bottom: 36px; padding-top: 36px; }
+  .stat-cell:nth-last-child(-n+2) { border-bottom: none; }
+  .service-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 720px) {
+  .stats-grid { grid-template-columns: 1fr; }
+  .stat-cell { border-right: none; }
+  .service-tile { grid-template-columns: 1fr; gap: 16px; padding: 28px 24px; }
+}
+
 /* ===== Side CTA (Careers → View Job Openings) ===== */
 .side-cta {
   position: fixed;
