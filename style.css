@@ -103,10 +103,12 @@ img, svg { max-width: 100%; display: block; }
 }
 
 .brand-logo {
-  width: 44px;
   height: 44px;
+  width: auto;
+  max-width: 140px;
   flex-shrink: 0;
   display: block;
+  object-fit: contain;
 }
 
 .brand-mark {
@@ -128,10 +130,13 @@ img, svg { max-width: 100%; display: block; }
 }
 
 .brand-text {
-  display: flex;
+  display: none;             /* logo image already contains SQA wordmark */
   flex-direction: column;
   gap: 3px;
 }
+
+/* Footer brand can still show text alongside the white-tinted logo */
+.footer-brand .brand-text { display: flex; }
 
 .nav-menu {
   display: flex;
