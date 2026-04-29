@@ -187,17 +187,45 @@ img, svg { max-width: 100%; display: block; }
   margin-top: 3px;
 }
 
-.nav-cta {
-  padding: 10px 22px;
-  background: var(--ink);
+/* Header Contact CTA — always visible, properly styled as a button */
+.nav-menu > li > a.nav-cta,
+a.nav-cta {
+  display: inline-block !important;
+  padding: 10px 22px !important;
+  background: var(--blue) !important;
   color: var(--white) !important;
   border-radius: var(--radius-sm);
   font-size: 0.84rem;
   font-weight: 600;
   letter-spacing: 0.5px;
+  border: 1px solid var(--blue) !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  transition: all 0.2s ease;
 }
 
-.nav-cta:hover { background: var(--blue) !important; color: var(--white) !important; }
+.nav-menu > li > a.nav-cta:hover,
+a.nav-cta:hover {
+  background: var(--blue-bright) !important;
+  border-color: var(--blue-bright) !important;
+  color: var(--white) !important;
+}
+
+/* Keep the button visible regardless of nav state (scrolled / dark / current) */
+.site-nav.scrolled .nav-cta,
+.nav-dark .nav-cta,
+.nav-menu > li.current > a.nav-cta {
+  background: var(--blue) !important;
+  color: var(--white) !important;
+  border-color: var(--blue) !important;
+}
+
+.site-nav.scrolled .nav-cta:hover,
+.nav-dark .nav-cta:hover,
+.nav-menu > li.current > a.nav-cta:hover {
+  background: var(--blue-bright) !important;
+  border-color: var(--blue-bright) !important;
+}
 
 .dropdown {
   position: absolute;
@@ -256,11 +284,19 @@ img, svg { max-width: 100%; display: block; }
 /* ===== Hero ===== */
 .hero {
   position: relative;
-  min-height: 88vh;
+  min-height: 72vh;
   padding-top: 78px;
   background: var(--navy);
   color: var(--white);
   overflow: hidden;
+}
+
+@media (max-width: 1100px) {
+  .hero { min-height: 62vh; }
+}
+
+@media (max-width: 720px) {
+  .hero { min-height: 56vh; }
 }
 
 .hero-media {
@@ -289,13 +325,13 @@ img, svg { max-width: 100%; display: block; }
   position: relative;
   max-width: 1260px;
   margin: 0 auto;
-  padding: 120px 32px 100px;
+  padding: 80px 32px 70px;
   z-index: 2;
   display: grid;
   grid-template-columns: 1.3fr 1fr;
   gap: 60px;
   align-items: center;
-  min-height: calc(88vh - 78px);
+  min-height: calc(72vh - 78px);
 }
 
 .hero-eyebrow {
@@ -2318,6 +2354,97 @@ img, svg { max-width: 100%; display: block; }
   .stats-grid { grid-template-columns: 1fr; }
   .stat-cell { border-right: none; }
   .service-tile { grid-template-columns: 1fr; gap: 16px; padding: 28px 24px; }
+}
+
+/* ===== Property Development — Model Cards (side by side) ===== */
+.model-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.model-card {
+  background: var(--white);
+  border: 1px solid var(--gray-light);
+  border-radius: var(--radius);
+  padding: 32px 32px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  transition: all 0.25s;
+}
+
+.model-card:hover {
+  border-color: var(--blue);
+  box-shadow: 0 6px 22px rgba(0, 59, 146, 0.08);
+  transform: translateY(-2px);
+}
+
+.model-icon {
+  width: 48px; height: 48px;
+  background: linear-gradient(145deg, #e6f1fb, var(--bg-light));
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--blue);
+}
+
+.model-icon svg { width: 24px; height: 24px; }
+
+.model-card h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--ink);
+  letter-spacing: -0.2px;
+  line-height: 1.3;
+}
+
+.model-card p {
+  color: var(--steel);
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+/* ===== Shared CTA below model cards ===== */
+.shared-cta {
+  margin-top: 32px;
+  padding: 32px 36px;
+  background: var(--white);
+  border: 1px solid var(--gray-light);
+  border-left: 4px solid var(--blue);
+  border-radius: var(--radius);
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 28px;
+  align-items: center;
+}
+
+.shared-cta h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 6px;
+  letter-spacing: -0.2px;
+}
+
+.shared-cta p {
+  color: var(--steel);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.shared-cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+@media (max-width: 1100px) {
+  .model-grid { grid-template-columns: 1fr; }
+  .shared-cta { grid-template-columns: 1fr; }
+  .shared-cta-actions { justify-content: flex-start; }
 }
 
 /* ===== Side CTA (Careers → View Job Openings) ===== */
