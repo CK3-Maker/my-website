@@ -31,7 +31,12 @@
     <div class="container">
       <div class="breadcrumb"><a href="index.html">Home</a> <span>/</span> <span>Contact</span></div>
       <h1 class="page-title">Let's Build the Right Opportunity Together.</h1>
-      <p class="page-sub">Whether you have a project enquiry, a land proposal, a joint-venture opportunity, or a career application — choose the channel that fits and our team will respond within one business day.</p>
+      <p class="page-sub">Contact SQA for project enquiries, land proposals, joint venture opportunities, careers, or general enquiries.</p>
+      <div class="hero-cta-row">
+        <a href="https://wa.me/60300000000?text=Hi%20SQA%2C%20I%20have%20an%20enquiry." class="btn btn-gold" target="_blank" rel="noopener">WhatsApp Us</a>
+        <a href="mailto:enquiry@sqabuilders.com" class="btn btn-outline">Email Us</a>
+        <a href="#enquiry-form" class="btn btn-outline">Send Enquiry</a>
+      </div>
     </div>
   </header>
 
@@ -88,49 +93,20 @@
     </div>
   </section>
 
-  <section class="section bg-light">
+  <section class="section bg-light" id="enquiry-form">
     <div class="container">
-      <div class="contact-grid">
+      <div class="contact-grid contact-grid-flip">
 
-        <aside class="contact-info-card">
-          <h3>Head Office</h3>
-          <p>SQA Builders Sdn Bhd — a subsidiary of SQA Group.</p>
-
-          <div class="contact-detail">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            <div><strong>Address</strong><span>[Address line 1]<br>[Address line 2]<br>Selangor, Malaysia</span></div>
-          </div>
-
-          <div class="contact-detail">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.362 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-            <div><strong>Phone &amp; Fax</strong><span>T: +60 3 0000 0000<br>F: +60 3 0000 0000</span></div>
-          </div>
-
-          <div class="contact-detail">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
-            <div><strong>Email</strong>
-              <a href="mailto:enquiry@sqabuilders.com">enquiry@sqabuilders.com</a><br>
-              <a href="mailto:tender@sqabuilders.com">tender@sqabuilders.com</a><br>
-              <a href="mailto:careers@sqabuilders.com">careers@sqabuilders.com</a><br>
-              <a href="mailto:development@sqabuilders.com">development@sqabuilders.com</a>
-            </div>
-          </div>
-
-          <div class="contact-detail">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-            <div><strong>Working Hours</strong><span>Mon – Fri: 9:00 AM – 6:00 PM<br>Sat: 9:00 AM – 1:00 PM</span></div>
-          </div>
-        </aside>
-
+        <!-- Form (left) -->
         <div>
           <div class="eyebrow">Enquiry Form</div>
-          <h2 class="section-title" style="font-size:1.7rem;">Send us a message.</h2>
-          <p style="color:var(--steel); margin: 14px 0 32px; line-height:1.7;">Tell us briefly about your enquiry — our team will respond within one business day. For time-sensitive matters, please call our office directly.</p>
+          <h2 class="section-title" style="font-size:1.5rem; margin-bottom: 12px;">Send us a message.</h2>
+          <p style="color:var(--steel); margin-bottom: 22px; font-size: 0.95rem; line-height:1.65;">Tell us briefly about your enquiry — we'll respond within one business day.</p>
 
           <form class="contact-form" onsubmit="handleSubmit(event)">
             <div class="field-row">
-              <div class="field"><label>Full Name</label><input type="text" name="name" required></div>
-              <div class="field"><label>Company / Organisation</label><input type="text" name="company"></div>
+              <div class="field"><label>Name</label><input type="text" name="name" required></div>
+              <div class="field"><label>Company</label><input type="text" name="company"></div>
             </div>
             <div class="field-row">
               <div class="field"><label>Email</label><input type="email" name="email" required></div>
@@ -150,51 +126,43 @@
               </select>
             </div>
             <div class="field">
-              <label>Your Message</label>
-              <textarea name="message" rows="6" required placeholder="Please share any relevant project details, timelines, or specific questions."></textarea>
+              <label>Message</label>
+              <textarea name="message" rows="4" required placeholder="Project details, timelines, or specific questions."></textarea>
             </div>
-            <div><button type="submit" class="btn btn-dark">Send Enquiry <span class="arrow">&rarr;</span></button></div>
+            <div><button type="submit" class="btn btn-primary">Send Enquiry <span class="arrow">&rarr;</span></button></div>
           </form>
         </div>
-      </div>
 
-      <div class="map-block" aria-label="Head office location map">
-        <div style="text-align:center;">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" style="width:42px; height:42px; margin: 0 auto 10px; color: var(--steel);"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          <div style="font-weight:600; color:var(--ink); margin-bottom:4px;">SQA Builders Head Office</div>
-          <div style="font-size: 0.9rem;">Embed your Google Map iframe here to display the office location on this page.</div>
-        </div>
-      </div>
-    </div>
-  </section>
+        <!-- Company details + map (right) -->
+        <aside class="contact-info-card">
+          <h3>Head Office</h3>
 
-  <section class="section bg-light">
-    <div class="container">
-      <div class="section-head center">
-        <div class="eyebrow">Direct Enquiry Channels</div>
-        <h2 class="section-title">Reach the right team faster.</h2>
-        <p class="section-lead">For specific enquiry types, please contact the dedicated inbox below. You will be routed to the right person on the first response.</p>
-      </div>
-      <div class="why-grid">
-        <div class="why-card"><h3>General Enquiries</h3><p>For any general enquiry regarding SQA Builders, our services, or our company.</p><a class="btn-link" style="margin-top:16px;" href="mailto:enquiry@sqabuilders.com">enquiry@sqabuilders.com &rarr;</a></div>
-        <div class="why-card"><h3>Tender &amp; Project Opportunities</h3><p>For invitations to tender, project briefs, and new business discussions.</p><a class="btn-link" style="margin-top:16px;" href="mailto:tender@sqabuilders.com">tender@sqabuilders.com &rarr;</a></div>
-        <div class="why-card"><h3>Careers</h3><p>For current openings, speculative applications, and internship enquiries.</p><a class="btn-link" style="margin-top:16px;" href="mailto:careers@sqabuilders.com">careers@sqabuilders.com &rarr;</a></div>
-        <div class="why-card"><h3>JV / Landowner Discussions</h3><p>For confidential discussions on co-development and joint-venture opportunities.</p><a class="btn-link" style="margin-top:16px;" href="mailto:development@sqabuilders.com">development@sqabuilders.com &rarr;</a></div>
-      </div>
-    </div>
-  </section>
+          <div class="contact-detail">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div><strong>Address</strong><span>[Address line 1]<br>[Address line 2]<br>Selangor, Malaysia</span></div>
+          </div>
 
-  <section class="cta-band">
-    <div class="container">
-      <div class="cta-band-grid">
-        <div>
-          <h2>Have a general enquiry?</h2>
-          <p>Not sure which team to contact? Send a general enquiry and we'll route it to the right person. Our team typically responds within one business day.</p>
-        </div>
-        <div class="cta-band-ctas">
-          <a href="mailto:enquiry@sqabuilders.com" class="btn btn-gold">Email General Enquiries <span class="arrow">&rarr;</span></a>
-          <a href="tel:+60300000000" class="btn btn-outline">Call Our Office</a>
-        </div>
+          <div class="contact-detail">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.362 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            <div><strong>Phone</strong><span>+60 3 0000 0000</span></div>
+          </div>
+
+          <div class="contact-detail">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+            <div><strong>Email</strong><a href="mailto:enquiry@sqabuilders.com">enquiry@sqabuilders.com</a></div>
+          </div>
+
+          <div class="contact-detail">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            <div><strong>Hours</strong><span>Mon – Fri: 9 AM – 6 PM<br>Sat: 9 AM – 1 PM</span></div>
+          </div>
+
+          <!-- Compact map -->
+          <div class="map-block-compact" aria-label="Head office location map">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" style="width:32px; height:32px; margin: 0 auto 8px; color: rgba(255,255,255,0.5);"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div style="font-size: 0.82rem; color: rgba(255,255,255,0.65);">Embed your Google Map iframe here.</div>
+          </div>
+        </aside>
       </div>
     </div>
   </section>
