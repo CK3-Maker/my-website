@@ -16,7 +16,10 @@ The site is built with plain HTML/CSS/JavaScript. No build tools, no framework �
 | **Board of Directors** names, roles, bios | `data/leadership.json` → `board` array |
 | **Key Management** (hidden by default) | `data/leadership.json` → `keyManagement` + set `showKeyManagement: true` |
 | **Corporate Milestones** timeline | `data/milestones.json` |
-| **Awards & Accolades** (tabs + items) | `data/awards.json` |
+| **Certifications & Recognitions** (tabs + items) | `data/awards.json` |
+| **Project D&B badge** (toggle "Design & Build" overlay on a project card) | `data/projects.json` → set `"designBuild": true` |
+| **WhatsApp number** (floating button + JV/Land/Career CTAs) | Search-and-replace `60300000000` across HTML files |
+| **Brand palette** (corporate blue `#077DCD` / `#2189F6` / `#003B92`) | `style.css` `:root` block |
 | **Open positions** (flip cards) | `data/jobs.json` |
 | Culture / events gallery imagery | `careers.html` → `.culture-tile` blocks |
 | Sector + Delivery capabilities | `capabilities.html` |

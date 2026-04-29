@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>On-Going Projects — SQA Builders Sdn Bhd</title>
+  <title>Certifications &amp; Recognitions — SQA Builders Sdn Bhd</title>
+  <meta name="description" content="ISO certifications, SHASSIC and QLASSIC achievements, client commendations, and industry recognition reflecting SQA's commitment to responsible construction and continuous improvement.">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -19,7 +20,7 @@
         <li><a href="capabilities.html">Capabilities</a></li>
         <li class="has-dropdown"><button class="nav-trigger">Projects</button><ul class="dropdown"><li><a href="current-projects.html">On-Going Projects</a></li><li><a href="completed-projects.html">Completed Projects</a></li></ul></li>
         <li><a href="property-development.html">Property Development</a></li>
-        <li><a href="certifications.html">Certifications &amp; Recognitions</a></li>
+        <li class="current"><a href="certifications.html">Certifications &amp; Recognitions</a></li>
         <li><a href="careers.html">Careers</a></li>
         <li><a href="contact.html" class="nav-cta">Contact</a></li>
       </ul>
@@ -29,48 +30,46 @@
 
   <header class="page-hero">
     <div class="container">
-      <div class="breadcrumb"><a href="index.html">Home</a> <span>/</span> <a href="projects.html">Projects</a> <span>/</span> <span>On-Going Projects</span></div>
-      <h1 class="page-title">Our on-going projects.</h1>
-      <p class="page-sub">An overview of the projects SQA is actively delivering on-site. Details are updated as new contracts commence and milestones are reached.</p>
+      <div class="breadcrumb"><a href="index.html">Home</a> <span>/</span> <span>Certifications &amp; Recognitions</span></div>
+      <h1 class="page-title">Certifications &amp; Recognitions</h1>
+      <p class="page-sub">Our certifications, quality benchmarks, safety recognition, and client commendations reflect SQA's commitment to responsible construction, operational excellence, and continuous improvement.</p>
     </div>
   </header>
 
   <section class="section">
     <div class="container">
       <div class="section-head">
-        <div class="eyebrow">Filter</div>
-        <h2 class="section-title">On-going by sector.</h2>
+        <div class="eyebrow">Recognition</div>
+        <h2 class="section-title">Certified, assessed, and commended.</h2>
+        <p class="section-lead">Browse through our certifications and recognitions across quality management, safety performance, and client commendations.</p>
       </div>
 
-      <div class="project-filter">
-        <button class="filter-chip active" data-filter="all">All</button>
-        <button class="filter-chip" data-filter="Industrial">Industrial</button>
-        <button class="filter-chip" data-filter="Commercial">Commercial</button>
-        <button class="filter-chip" data-filter="Residential">Residential</button>
-        <button class="filter-chip" data-filter="Institutional">Institutional</button>
-      </div>
-
-      <!-- Dynamically mounted from data/projects.json -->
-      <div class="projects-grid" id="currentProjectsMount"></div>
+      <!-- Mounted from data/awards.json -->
+      <div class="tabs" id="awardsTabs"></div>
+      <div id="awardsPanels"></div>
     </div>
   </section>
 
   <section class="cta-band">
     <div class="container">
       <div class="cta-band-grid">
-        <div><h2>Interested in joining our project pipeline?</h2><p>Consultants, subcontractors, and suppliers are welcome to engage with our project teams for upcoming tenders and packages.</p></div>
+        <div><h2>Discuss your project with a certified team.</h2><p>From quality benchmarks to safety performance, SQA's recognitions reflect how we work with clients on every engagement.</p></div>
         <div class="cta-band-ctas">
-          <a href="contact.html" class="btn btn-gold">Get in Touch <span class="arrow">&rarr;</span></a>
-          <a href="completed-projects.html" class="btn btn-outline">View Completed Projects</a>
+          <a href="contact.html" class="btn btn-gold">Discuss Your Project <span class="arrow">&rarr;</span></a>
+          <a href="capabilities.html" class="btn btn-outline">View Our Capabilities</a>
         </div>
       </div>
     </div>
   </section>
 
+  <a href="https://wa.me/60300000000" class="wa-float" aria-label="WhatsApp Us" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.607zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.711.306 1.265.489 1.697.626.713.226 1.362.194 1.875.118.572-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+  </a>
+
   <footer class="site-footer">
     <div class="container">
       <div class="footer-top">
-        <div class="footer-brand"><div class="brand"><img src="logo.svg" alt="SQA Builders" class="brand-logo"><span class="brand-text"><span class="brand-mark">SQA</span><span class="brand-sub">Builders</span></span></div><p>SQA Builders Sdn Bhd is a progressive Malaysian-Japanese contractor and part of the SQA Group, established in 1997. CIDB Grade G7.</p></div>
+        <div class="footer-brand"><div class="brand"><img src="logo.svg" alt="SQA Builders" class="brand-logo"><span class="brand-text"><span class="brand-mark">SQA</span><span class="brand-sub">Builders</span></span></div><p>SQA Builders Sdn Bhd is a leading Japanese-Malaysian design and build construction company, established in 1997 as part of the SQA Group. CIDB Grade G7.</p></div>
         <div class="footer-col"><h5>About</h5><a href="about.html">Overview</a><a href="milestones.html">Corporate Milestones</a><a href="leadership.html">Our Leadership</a><a href="vision-mission.html">Vision &amp; Mission</a><a href="people.html">Our People</a><a href="safety.html">Safety</a></div>
         <div class="footer-col"><h5>Business</h5><a href="capabilities.html">Capabilities</a><a href="property-development.html">Property Development</a><a href="certifications.html">Certifications &amp; Recognitions</a><a href="careers.html">Careers</a><a href="current-projects.html">On-Going Projects</a><a href="completed-projects.html">Completed Projects</a></div>
         <div class="footer-col"><h5>Head Office</h5><p>SQA Builders Sdn Bhd<br>[Address line 1]<br>[Address line 2]<br>Selangor, Malaysia</p><p>T: +60 3 0000 0000<br>E: <a href="mailto:enquiry@sqabuilders.com">enquiry@sqabuilders.com</a></p></div>
@@ -78,10 +77,6 @@
       <div class="footer-bottom"><span>&copy; 2026 SQA Builders Sdn Bhd. All rights reserved.</span><span>Speed. Quality. Assurance.</span></div>
     </div>
   </footer>
-
-  <a href="https://wa.me/60300000000" class="wa-float" aria-label="WhatsApp Us" target="_blank" rel="noopener">
-    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.607zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.711.306 1.265.489 1.697.626.713.226 1.362.194 1.875.118.572-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
-  </a>
 
   <script src="main.js"></script>
 </body>

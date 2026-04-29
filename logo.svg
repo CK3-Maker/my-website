@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
   Placeholder logo for SQA Builders.
-  Replace this file with your actual company logo (logo.svg or logo.png — see UPDATE_NOTES.md).
+  To use the official SQA logo, save your real logo file as logo.png (or logo.svg)
+  in this folder and the site will pick it up automatically.
+  See UPDATE_NOTES.md §13 for instructions.
 -->
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
-  <circle cx="60" cy="60" r="54" fill="none" stroke="#c8102e" stroke-width="4"/>
+  <circle cx="60" cy="60" r="54" fill="none" stroke="#003B92" stroke-width="4"/>
   <text x="60" y="72" text-anchor="middle"
         font-family="Inter, Arial, sans-serif" font-weight="800"
-        font-size="34" fill="#c8102e" letter-spacing="1">SQA</text>
+        font-size="34" fill="#003B92" letter-spacing="1">SQA</text>
 </svg>

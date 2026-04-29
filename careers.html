@@ -18,8 +18,9 @@
         <li><a href="index.html">Home</a></li>
         <li class="has-dropdown"><button class="nav-trigger">About Us</button><ul class="dropdown"><li><a href="about.html">Overview</a></li><li><a href="milestones.html">Corporate Milestones</a></li><li><a href="leadership.html">Our Leadership</a></li><li><a href="vision-mission.html">Vision &amp; Mission</a></li><li><a href="people.html">Our People</a></li><li><a href="safety.html">Safety</a></li></ul></li>
         <li><a href="capabilities.html">Capabilities</a></li>
+        <li class="has-dropdown"><button class="nav-trigger">Projects</button><ul class="dropdown"><li><a href="current-projects.html">On-Going Projects</a></li><li><a href="completed-projects.html">Completed Projects</a></li></ul></li>
         <li><a href="property-development.html">Property Development</a></li>
-        <li><a href="awards.html">Awards &amp; Accolades</a></li>
+        <li><a href="certifications.html">Certifications &amp; Recognitions</a></li>
         <li class="current"><a href="careers.html">Careers</a></li>
         <li><a href="contact.html" class="nav-cta">Contact</a></li>
       </ul>
@@ -31,49 +32,50 @@
     <div class="container">
       <div class="breadcrumb"><a href="index.html">Home</a> <span>/</span> <span>Careers</span></div>
       <h1 class="page-title">Build Your Career With SQA.</h1>
-      <p class="page-sub">Join a construction team committed to speed, quality, assurance, and professional growth.</p>
+      <p class="page-sub">Join a team that values discipline, teamwork, safety, and professional growth across industrial and commercial construction projects.</p>
     </div>
   </header>
 
-  <!-- Why Join Us -->
-  <section class="section">
-    <div class="container">
-      <div class="section-head">
-        <div class="eyebrow">Why Join Us</div>
-        <h2 class="section-title">A career partner, not just an employer.</h2>
-        <p class="section-lead">SQA gives capable people the projects, exposure, and culture to grow into the next stage of their career — supported by senior leaders who stay close to delivery.</p>
-      </div>
-      <div class="why-grid">
-        <div class="why-card"><h3>Real Project Exposure</h3><p>Opportunity to work on industrial, commercial, and turnkey projects across multiple sectors and project types.</p></div>
-        <div class="why-card"><h3>Malaysian-Japanese Culture</h3><p>Exposure to construction discipline shaped by both Malaysian operational strength and Japanese project management practice.</p></div>
-        <div class="why-card"><h3>Career Growth</h3><p>Hands-on project experience, structured mentorship, and clear progression pathways across engineering, commercial, and operations.</p></div>
-        <div class="why-card"><h3>Collaborative Teams</h3><p>Site, design, and office teams working as one — without silos or political overhead.</p></div>
-        <div class="why-card"><h3>Safety &amp; Quality</h3><p>A culture where safety, quality, and professionalism are non-negotiable standards — not aspirations.</p></div>
-        <div class="why-card"><h3>Long-Term Stability</h3><p>A G7 contractor with 29 years of continuous operation and a healthy pipeline across industrial and commercial sectors.</p></div>
-      </div>
-      <p style="margin-top: 24px; color: var(--steel); font-size: 0.95rem;">Curious about life at SQA, our culture, and our community? See <a href="people.html" style="color: var(--blue); font-weight: 600; border-bottom: 1px solid var(--blue);">Our People &rarr;</a></p>
-    </div>
-  </section>
-
-  <!-- Job Opportunities -->
-  <section class="section bg-light" id="openings">
+  <!-- Job Opportunities — appears immediately so visitors see roles first -->
+  <section class="section" id="openings">
     <div class="container">
       <div class="section-head">
         <div class="eyebrow">Job Opportunities</div>
         <h2 class="section-title">Current openings.</h2>
-        <p class="section-lead">Click any role to view the full job description. To apply, use the Apply button on the card — or send your CV to <a href="mailto:careers@sqabuilders.com" style="color:var(--blue); font-weight:600; border-bottom:1px solid var(--blue);">careers@sqabuilders.com</a>.</p>
+        <p class="section-lead">Click any role to view the full job description. To apply, use the Apply button on the card — or contact our HR team via WhatsApp or email.</p>
       </div>
 
-      <!-- Mounted from data/jobs.json — click to flip, click again to flip back -->
+      <!-- Mounted from data/jobs.json -->
       <div class="flip-grid" id="jobsMount"></div>
 
-      <div style="margin-top: 40px; padding: 28px 32px; background: var(--white); border: 1px solid var(--gray-light); border-radius: var(--radius); display:flex; align-items:center; justify-content:space-between; gap: 24px; flex-wrap: wrap;">
+      <div style="margin-top: 40px; padding: 28px 32px; background: var(--bg-light); border: 1px solid var(--gray-light); border-radius: var(--radius); display:flex; align-items:center; justify-content:space-between; gap: 24px; flex-wrap: wrap;">
         <div>
           <strong style="font-size: 1rem; color: var(--ink); display: block; margin-bottom: 4px;">Don't see a matching role?</strong>
           <span style="color: var(--steel); font-size: 0.92rem;">We welcome speculative applications from experienced construction professionals.</span>
         </div>
-        <a class="btn btn-primary" href="mailto:careers@sqabuilders.com">Submit Your Resume <span class="arrow">&rarr;</span></a>
+        <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+          <a class="btn btn-primary" href="mailto:careers@sqabuilders.com">Submit Your Resume <span class="arrow">&rarr;</span></a>
+          <a class="btn btn-outline-blue" href="https://wa.me/60300000000?text=Hi%20SQA%20HR%2C%20I%20would%20like%20to%20apply." target="_blank" rel="noopener">WhatsApp HR</a>
+        </div>
       </div>
+    </div>
+  </section>
+
+  <!-- Why Join Us — shorter, below jobs -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">Why Join Us</div>
+        <h2 class="section-title">A career partner, not just an employer.</h2>
+      </div>
+      <ul class="checked-list" style="font-size: 1.02rem; max-width: 820px;">
+        <li>Work on industrial, commercial, and turnkey construction projects</li>
+        <li>Exposure to Japanese-Malaysian construction culture</li>
+        <li>Practical site and office experience</li>
+        <li>Career growth and training opportunities</li>
+        <li>Strong focus on safety, quality, and teamwork</li>
+      </ul>
+      <p style="margin-top: 28px; color: var(--steel); font-size: 0.98rem;">Curious about life at SQA, our culture, and our community? See <a href="people.html" style="color: var(--blue); font-weight: 600; border-bottom: 1px solid var(--blue);">Our People &rarr;</a></p>
     </div>
   </section>
 
@@ -83,7 +85,7 @@
         <div><h2>Ready to build your future with SQA?</h2><p>Whether you're an experienced construction professional or just starting your career, we'd like to hear from you.</p></div>
         <div class="cta-band-ctas">
           <a href="mailto:careers@sqabuilders.com" class="btn btn-gold">Submit Your Resume <span class="arrow">&rarr;</span></a>
-          <a href="people.html" class="btn btn-outline">Explore Life at SQA</a>
+          <a href="https://wa.me/60300000000?text=Hi%20SQA%20HR%2C%20I%20am%20interested%20in%20a%20career%20with%20SQA." class="btn btn-outline" target="_blank" rel="noopener">WhatsApp HR</a>
         </div>
       </div>
     </div>
@@ -100,12 +102,16 @@
       <div class="footer-top">
         <div class="footer-brand"><div class="brand"><img src="logo.svg" alt="SQA Builders" class="brand-logo"><span class="brand-text"><span class="brand-mark">SQA</span><span class="brand-sub">Builders</span></span></div><p>SQA Builders Sdn Bhd is a leading Malaysian-Japanese industrial contractor and part of the SQA Group, established in 1997. CIDB Grade G7.</p></div>
         <div class="footer-col"><h5>About</h5><a href="about.html">Overview</a><a href="milestones.html">Corporate Milestones</a><a href="leadership.html">Our Leadership</a><a href="vision-mission.html">Vision &amp; Mission</a><a href="people.html">Our People</a><a href="safety.html">Safety</a></div>
-        <div class="footer-col"><h5>Business</h5><a href="capabilities.html">Capabilities</a><a href="property-development.html">Property Development</a><a href="awards.html">Awards &amp; Accolades</a><a href="careers.html">Careers</a><a href="current-projects.html">On-Going Projects</a><a href="completed-projects.html">Completed Projects</a></div>
+        <div class="footer-col"><h5>Business</h5><a href="capabilities.html">Capabilities</a><a href="property-development.html">Property Development</a><a href="certifications.html">Certifications &amp; Recognitions</a><a href="careers.html">Careers</a><a href="current-projects.html">On-Going Projects</a><a href="completed-projects.html">Completed Projects</a></div>
         <div class="footer-col"><h5>Head Office</h5><p>SQA Builders Sdn Bhd<br>[Address line 1]<br>[Address line 2]<br>Selangor, Malaysia</p><p>T: +60 3 0000 0000<br>E: <a href="mailto:enquiry@sqabuilders.com">enquiry@sqabuilders.com</a></p></div>
       </div>
       <div class="footer-bottom"><span>&copy; 2026 SQA Builders Sdn Bhd. All rights reserved.</span><span>Speed. Quality. Assurance.</span></div>
     </div>
   </footer>
+
+  <a href="https://wa.me/60300000000" class="wa-float" aria-label="WhatsApp Us" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.607zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.711.306 1.265.489 1.697.626.713.226 1.362.194 1.875.118.572-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+  </a>
 
   <script src="main.js"></script>
 </body>

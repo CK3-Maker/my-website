@@ -1,5 +1,5 @@
 {
-  "_note": "Edit this file to update Current & Completed Projects pages. Use one of these values for 'category': Industrial, Commercial, Residential, Institutional.",
+  "_note": "Edit this file to update On-Going & Completed Projects pages. 'category' must be one of: Industrial, Commercial, Residential, Institutional. Set 'designBuild': true on any project to display a 'Design & Build' badge on the card image.",
 
   "current": [
     {
@@ -8,7 +8,8 @@
       "location": "Shah Alam, Selangor",
       "period": "Target completion Q4 2026",
       "value": "Undisclosed",
-      "category": "Industrial"
+      "category": "Industrial",
+      "designBuild": true
     },
     {
       "title": "Extension and Upgrade of Manufacturing Plant",
@@ -16,7 +17,8 @@
       "location": "Nilai, Negeri Sembilan",
       "period": "Target completion Q2 2026",
       "value": "Undisclosed",
-      "category": "Industrial"
+      "category": "Industrial",
+      "designBuild": true
     },
     {
       "title": "Cold Storage and Frozen Food Processing Facility",
@@ -24,7 +26,8 @@
       "location": "Subang Jaya, Selangor",
       "period": "Target completion Q1 2027",
       "value": "Undisclosed",
-      "category": "Industrial"
+      "category": "Industrial",
+      "designBuild": true
     },
     {
       "title": "Flagship Automotive Showroom and Service Centre",
@@ -59,7 +62,8 @@
       "location": "Port Klang, Selangor",
       "period": "2022 – 2024",
       "value": "Undisclosed",
-      "category": "Industrial"
+      "category": "Industrial",
+      "designBuild": true
     },
     {
       "title": "Manufacturing Plant Expansion Development",
@@ -67,7 +71,8 @@
       "location": "Kulim, Kedah",
       "period": "2021 – 2023",
       "value": "Undisclosed",
-      "category": "Industrial"
+      "category": "Industrial",
+      "designBuild": true
     },
     {
       "title": "Cold Room and Frozen Food Factory",
@@ -75,7 +80,8 @@
       "location": "Shah Alam, Selangor",
       "period": "2020 – 2022",
       "value": "Undisclosed",
-      "category": "Industrial"
+      "category": "Industrial",
+      "designBuild": true
     },
     {
       "title": "Flagship Automotive Showroom",
@@ -115,7 +121,8 @@
       "location": "Penang",
       "period": "2019 – 2021",
       "value": "Undisclosed",
-      "category": "Industrial"
+      "category": "Industrial",
+      "designBuild": true
     },
     {
       "title": "Condominium Development",
